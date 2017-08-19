@@ -8,14 +8,29 @@ $(function(){
     });
 });
 
+var lastScrollLeft = 0;
 $(function(){
-    $(window).scroll(function(){
-        if ($('#character').attr("src") != "img/walking.gif") {
-            $('#character').attr("src", "img/walking.gif");
+    $(window).scroll(function(event){
+        var st = $(this).scrollLeft();
+        console.log(st);
+        console.log(lastScrollLeft);
+        if (st > lastScrollLeft) {
+            if ($('#character').attr("src") != "img/walking.gif") {
+                $('#character').attr("src", "img/walking.gif");
+            }
+            clearTimeout( $.data( this, "scrollCheck" ) );
+            $.data( this, "scrollCheck", setTimeout(function() {
+                $('#character').attr("src", "img/standing.gif");
+            }, 50) );
+        } else {
+            if ($('#character').attr("src") != "img/walking_back.gif") {
+                $('#character').attr("src", "img/walking_back.gif");
+            }
+            clearTimeout( $.data( this, "scrollCheck" ) );
+            $.data( this, "scrollCheck", setTimeout(function() {
+                $('#character').attr("src", "img/standing_back.gif");
+            }, 50) );
         }
-        clearTimeout( $.data( this, "scrollCheck" ) );
-        $.data( this, "scrollCheck", setTimeout(function() {
-            $('#character').attr("src", "img/standing.gif");
-        }, 50) );
+        lastScrollLeft = st;
     });
 });

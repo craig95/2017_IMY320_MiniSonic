@@ -8,7 +8,6 @@ body {
 	font-family: 'Lucida Grande', Helvetica, sans-serif;
 	background: #121212;
 	color: #000000;
-	padding: 20px;
     background-image: url(../img/background.gif);
     background-repeat: repeat-x;
     background-size: cover;
@@ -16,6 +15,14 @@ body {
 
 tr {
 	vertical-align: top;
+}
+
+table {
+    height: 100%;
+}
+
+td {
+    width: 100%;
 }
 
 /*
@@ -28,7 +35,7 @@ tr {
     position: fixed;
     width: 84px;
     height: 210px;
-    left: 10px;
+    left: 50px;
     top: 440px;
 }
 
