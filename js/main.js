@@ -21,7 +21,7 @@ $(function(){
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function() {
                 $('#character').attr("src", "img/standing.gif");
-            }, 50) );
+            }, 200) );
         } else {
             if ($('#character').attr("src") != "img/walking_back.gif") {
                 $('#character').attr("src", "img/walking_back.gif");
@@ -29,7 +29,7 @@ $(function(){
             clearTimeout( $.data( this, "scrollCheck" ) );
             $.data( this, "scrollCheck", setTimeout(function() {
                 $('#character').attr("src", "img/standing_back.gif");
-            }, 50) );
+            }, 200) );
         }
         lastScrollLeft = st;
     });
