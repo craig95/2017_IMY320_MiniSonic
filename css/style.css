@@ -81,26 +81,18 @@ html[xmlns] .clearfix {
 	z-index: 1004;
 }
 
-/*************************************
-			NIGHT SCENE
-*************************************/
-
-#night {
-	background-color: #111012;
-}
-
 .pillar_section {
 	width: 100px;
 }
 
 .pillar_type1 {
-	 background: url("../img/pillar_1.png") repeat-y 0% 0%;
-	 position: absolute;
-	 background-size: contain;
-	 width: 100px;
-	 height: 100%;
-	 z-index: 1006;
- }
+	background: url("../img/pillar_1.png") repeat-y 0% 0%;
+	position: absolute;
+	background-size: contain;
+	width: 100px;
+	height: 100%;
+	z-index: 1006;
+}
 
 .pillar_type2 {
 	background: url("../img/pillar_2.png") repeat-y 0% 0%;
@@ -109,6 +101,23 @@ html[xmlns] .clearfix {
 	width: 100px;
 	height: 100%;
 	z-index: 1006;
+}
+
+.pillar_type3 {
+	background: url("../img/pillar_3.png") repeat-y 0% 0%;
+	position: absolute;
+	background-size: contain;
+	width: 100px;
+	height: 100%;
+	z-index: 1006;
+}
+
+/*************************************
+			NIGHT SCENE
+*************************************/
+
+#night {
+	background-color: #111012;
 }
 
 #stars {
