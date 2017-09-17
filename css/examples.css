@@ -1,0 +1,75 @@
+/*
+	Containers
+*/
+#content-wrapper, #example-wrapper {
+	height: 100%;
+}
+.scrollContainer {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%
+}
+.scrollContainer {
+	height: 100%;
+	margin: auto;
+}
+#example-wrapper .scrollContent {
+	height: 100%;
+}
+
+.horizontal.scrollContainer {
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+#example-wrapper.scrollContainer .scrollContent {
+	width: 100%;
+	height: auto;
+}
+#example-wrapper.scrollContainer.horizontal .scrollContent {
+	width: auto;
+	height: 100%;
+}
+#example-wrapper.horizontal {
+	white-space: nowrap;
+	font-size: 0;  /* fix for spaces between inline block divs */
+}
+
+section#night {
+	 text-align: center;
+	 position: relative;
+	 height: 100%;
+	 min-height: 500px;
+	 min-width: 100%;
+	 height: 100vh;
+ }
+.horizontal section, .horizontal section#night{
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+section#snow {
+	text-align: center;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+	height: 100vh;
+}
+.horizontal section, .horizontal section#snow{
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+section#sky {
+	text-align: center;
+	height: 100%;
+	min-height: 500px;
+	min-width: 100%;
+	height: 100vh;
+}
+.horizontal section, .horizontal section#sky{
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}

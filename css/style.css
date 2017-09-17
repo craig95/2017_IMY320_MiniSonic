@@ -1,0 +1,308 @@
+/*
+	General styles
+*/
+body {
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-size: 13px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body, html {
+	height: 100%
+}
+
+h1, h2, h3, h4 {
+	font-family: "Josefin Slab", serif;
+}
+h1 {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 40px;
+}
+h2 {
+	font-size: 20px;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #2e639e;
+}
+a:hover {
+	text-decoration: underline;
+}
+.touchonly {
+	display: none;
+}
+html.touch .touchonly {
+	display: block;
+}
+.noselect * {
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+}
+.doselect * {
+	user-select: auto;
+	-webkit-user-select: auto;
+	-khtml-user-select: auto;
+	-moz-user-select: auto;
+	-o-user-select: auto;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+#character {
+	background-image: url("../img/standing.png");
+	background-repeat: no-repeat;
+	background-position: 40% 88.5%;
+	background-size: 10% 20%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1004;
+}
+
+/*************************************
+			NIGHT SCENE
+*************************************/
+
+#night {
+	background-color: #111012;
+}
+
+.pillar_section {
+	width: 100px;
+}
+
+.pillar_type1 {
+	 background: url("../img/pillar_1.png") repeat-y 0% 0%;
+	 position: absolute;
+	 background-size: contain;
+	 width: 100px;
+	 height: 100%;
+	 z-index: 1006;
+ }
+
+.pillar_type2 {
+	background: url("../img/pillar_2.png") repeat-y 0% 0%;
+	position: absolute;
+	background-size: contain;
+	width: 100px;
+	height: 100%;
+	z-index: 1006;
+}
+
+#stars {
+	background: url("../img/Screen1/Stars.gif") no-repeat 50% 0%;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	z-index: 905;
+}
+
+#fire {
+	background: url("../img/Screen1/Fireplace.gif") no-repeat 50% 91%;
+	background-size: 10% 20%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+#night-platform {
+	background: url("../img/Screen1/GroundPlatform.png") repeat-x 0% 100%;
+	background-size: 50% 10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+#game_logo {
+	background: url("../img/Screen1/logo.png") no-repeat 10% 10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 10001;
+}
+
+/* Sky Layers*/
+#night-sky-layer1 {
+	background: url("../img/Screen1/sky_layer1.png") repeat-x 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 900;
+}
+#night-sky-layer2 {
+	 background: url("../img/Screen1/sky_layer2.png") repeat-x 0% 0%;
+	 position: absolute;
+	 height: 75vh;
+	 width: 100%;
+	 z-index: 901;
+}
+#night-sky-layer3 {
+	background: url("../img/Screen1/sky_layer3.png") repeat-x 0% 0%;
+	position: absolute;
+	height: 70vh;
+	width: 100%;
+	z-index: 902;
+}
+#night-sky-layer4 {
+	background: url("../img/Screen1/sky_layer4.png") repeat-x 0% 0%;
+	position: absolute;
+	height: 65vh;
+	width: 100%;
+	z-index: 903;
+}
+#night-sky-layer5 {
+	background: url("../img/Screen1/sky_layer5.png") repeat-x 0% 0%;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	z-index: 904;
+}
+
+/* Foliage */
+#foliage_bb {
+	background: url("../img/Screen1/foliage_bb.png") no-repeat 0% 40%;
+	position: absolute;
+	height: 100vh;
+	width: 108%;
+	z-index: 905;
+}
+#foliage_bf {
+	background: url("../img/Screen1/foliage_bf.png") no-repeat 0% 40%;
+	position: absolute;
+	height: 100vh;
+	width: 120%;
+	z-index: 906;
+}
+
+
+/*************************************
+			SNOW SCENE
+*************************************/
+
+#snow {
+	background-color: #ededed;
+}
+
+#snow-platform {
+	background: url("../img/Screen2/GroundPlatform.png") repeat-x 0% 100%;
+	background-size: 50% 10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Sky Layers*/
+#snow-sky-layer1 {
+	background: url("../img/Screen2/sky_layer1.png") repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 900;
+}
+#snow-sky-layer2 {
+	background: url("../img/Screen2/sky_layer2.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 75vh;
+	width: 100%;
+	z-index: 904;
+}
+#snow-sky-layer3 {
+	background: url("../img/Screen2/sky_layer3.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 70vh;
+	width: 100%;
+	z-index: 903;
+}
+#snow-sky-layer4 {
+	background: url("../img/Screen2/sky_layer4.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 65vh;
+	width: 100%;
+	z-index: 902;
+}
+#snow-sky-layer5 {
+	background: url("../img/Screen2/sky_layer5.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	z-index: 901;
+}
+
+/*************************************
+			SKY SCENE
+*************************************/
+
+#sky {
+	background-color: #ededed;
+}
+
+#sky-platform {
+	background: url("../img/Screen3/GroundPlatform.png") repeat-x 0% 100%;
+	background-size: 50% 10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* Sky Layers*/
+#sky-sky-layer1 {
+	background: url("../img/Screen3/sky_layer1.png") repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 900;
+}
+#sky-sky-layer2 {
+	background: url("../img/Screen3/sky_layer2.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	z-index: 904;
+}
+#sky-sky-layer3 {
+	background: url("../img/Screen3/sky_layer3.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 903;
+}
+#sky-sky-layer4 {
+	background: url("../img/Screen3/sky_layer4.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 902;
+}
+#sky-sky-layer5 {
+	background: url("../img/Screen3/sky_layer5.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 901;
+}
