@@ -230,35 +230,35 @@ html[xmlns] .clearfix {
 	background: url("../img/Screen2/sky_layer1.png") repeat 0% 0%;
 	position: absolute;
 	height: 100vh;
-	width: 100%;
+	width: 110%;
 	z-index: 900;
 }
 #snow-sky-layer2 {
 	background: url("../img/Screen2/sky_layer2.png") no-repeat 0% 0%;
 	position: absolute;
 	height: 75vh;
-	width: 100%;
+	width: 110%;
 	z-index: 904;
 }
 #snow-sky-layer3 {
 	background: url("../img/Screen2/sky_layer3.png") no-repeat 0% 0%;
 	position: absolute;
 	height: 70vh;
-	width: 100%;
+	width: 110%;
 	z-index: 903;
 }
 #snow-sky-layer4 {
 	background: url("../img/Screen2/sky_layer4.png") no-repeat 0% 0%;
 	position: absolute;
 	height: 65vh;
-	width: 100%;
+	width: 110%;
 	z-index: 902;
 }
 #snow-sky-layer5 {
 	background: url("../img/Screen2/sky_layer5.png") no-repeat 0% 0%;
 	position: absolute;
 	height: 60vh;
-	width: 100%;
+	width: 120%;
 	z-index: 901;
 }
 
@@ -279,6 +279,44 @@ html[xmlns] .clearfix {
 	z-index: 1000;
 }
 
+/* Islands */
+
+.island {
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+.type1 {
+	background-image: url("../img/Screen4/platform_1.png");
+}
+
+.type2 {
+	background-image: url("../img/Screen4/platform_2.png");
+}
+
+.type3 {
+	background-image: url("../img/Screen4/platform_3.png");
+}
+
+#island-1 {
+	background-size: 14% 40%;
+	background-position: 15% 40%;
+}
+
+#island-2 {
+	background-size: 20% 20%;
+	background-position: 50% 50%;
+}
+
+#island-3 {
+	background-size: 14% 40%;
+	background-position: 85% 20%;
+}
+
+
 /* Sky Layers*/
 #sky-sky-layer1 {
 	background: url("../img/Screen3/sky_layer1.png") repeat 0% 0%;
@@ -288,28 +326,91 @@ html[xmlns] .clearfix {
 	z-index: 900;
 }
 #sky-sky-layer2 {
-	background: url("../img/Screen3/sky_layer2.png") no-repeat 0% 0%;
+	background: url("../img/Screen3/sky_layer2.png") repeat-x 0% 0%;
 	position: absolute;
 	height: 60vh;
 	width: 100%;
 	z-index: 904;
 }
 #sky-sky-layer3 {
-	background: url("../img/Screen3/sky_layer3.png") no-repeat 0% 0%;
+	background: url("../img/Screen3/sky_layer3.png") repeat-x 0% 0%;
 	position: absolute;
 	height: 100vh;
 	width: 100%;
 	z-index: 903;
 }
 #sky-sky-layer4 {
-	background: url("../img/Screen3/sky_layer4.png") no-repeat 0% 0%;
+	background: url("../img/Screen3/sky_layer4.png") repeat-x 0% 0%;
 	position: absolute;
 	height: 100vh;
 	width: 100%;
 	z-index: 902;
 }
 #sky-sky-layer5 {
-	background: url("../img/Screen3/sky_layer5.png") no-repeat 0% 0%;
+	background: url("../img/Screen3/sky_layer5.png") repeat-x 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 901;
+}
+
+/*************************************
+			SHADOWS SCENE
+*************************************/
+
+#shadows {
+	background-color: #ededed;
+}
+
+#shadows-platform {
+	background: url("../img/Screen4/GroundPlatform.png") repeat-x 0% 100%;
+	background-size: 50% 10%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+#castle {
+	background: url("../img/Screen4/Castle.png") no-repeat 50% 0%;
+	background-size: 50% 90.5%;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* shadows Layers*/
+#shadows-sky-layer1 {
+	background: url("../img/Screen4/sky_layer1.png") repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 900;
+}
+#shadows-sky-layer2 {
+	background: url("../img/Screen4/sky_layer2.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 60vh;
+	width: 100%;
+	z-index: 904;
+}
+#shadows-sky-layer3 {
+	background: url("../img/Screen4/sky_layer3.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 903;
+}
+#shadows-sky-layer4 {
+	background: url("../img/Screen4/sky_layer4.png") no-repeat 0% 0%;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 902;
+}
+#shadows-sky-layer5 {
+	background: url("../img/Screen4/sky_layer5.png") no-repeat 0% 0%;
 	position: absolute;
 	height: 100vh;
 	width: 100%;
