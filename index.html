@@ -135,64 +135,36 @@
 					</script>
 				</section>
 
-				<!--<section class="demo fullwidth" style="">-->
-					<!--<div data-scrollmagic-pin-spacer="" class="scrollmagic-pin-spacer" style="top: 30px; left: auto; bottom: auto; right: auto; margin: 0px; display: block; position: relative; box-sizing: content-box; min-width: 900px; width: auto; min-height: 500px; height: auto; padding-left: 0px; padding-right: 2000px;"><div id="parallaxContainer" style="position: relative; margin: auto; top: 0px; left: 0px; bottom: auto; right: auto;">-->
-						<!--<div class="layer1" style="background-position: 0% 0%;">-->
-							<!--<div class="box1 white">-->
-								<!--<p>A box in the sky.</p>-->
-								<!--<a href="http://scrollmagic.io/examples/advanced/parallax_scrolling.html#" class="viewsource">view source</a>-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--<div class="layer2" style="background-position: 0% 0%;"></div>-->
-						<!--<div class="layer3" style="background-position: 0% 0%;"></div>-->
-					<!--</div></div>-->
-					<!--<script>-->
-						<!--$(function () { // wait for document ready-->
-							<!--// build tween-->
-							<!--var tween = new TimelineMax ()-->
-								<!--.add([-->
-									<!--TweenMax.to("#parallaxContainer .layer1", 1, {backgroundPosition: "-40% 0", ease: Linear.easeNone}),-->
-									<!--TweenMax.to("#parallaxContainer .layer2", 1, {backgroundPosition: "-500% 0", ease: Linear.easeNone}),-->
-									<!--TweenMax.to("#parallaxContainer .layer3", 1, {backgroundPosition: "-225% 0", ease: Linear.easeNone})-->
-								<!--]);-->
+				<section class="pillar_section"><div class="pillar_type3"></div></section>
 
-							<!--// build scene-->
-							<!--var scene = new ScrollMagic.Scene({triggerElement: "#parallaxContainer", duration: 2000, offset: 450})-->
-											<!--.setTween(tween)-->
-											<!--.setPin("#parallaxContainer")-->
-											<!--.addIndicators() // add indicators (requires plugin)-->
-											<!--.addTo(controller);-->
-						<!--});-->
-					<!--</script>-->
-				<!--</section>-->
-				<!--<div class="spacer s4"></div>-->
-				<!--<div class="spacer s0"></div>-->
-				<!--<section class="demo fullwidth" id="trigger2">-->
-					<!--<div id="parallaxText">-->
-						<!--<h1 class="layer1" style="left: 300px; visibility: inherit; opacity: 0.05; transform: matrix(3, 0, 0, 3, 0, 0);">PARALLAX</h1>-->
-						<!--<h1 class="layer2" style="left: 150px; visibility: inherit; opacity: 0.3; transform: matrix(2, 0, 0, 2, 0, 0);">PARALLAX</h1>-->
-						<!--<h1 class="layer3">-->
-							<!--PARALLAX-->
-							<!--<a href="http://scrollmagic.io/examples/advanced/parallax_scrolling.html#" class="viewsource">view source</a>-->
-						<!--</h1>-->
-						<!---->
-					<!--</div>-->
-					<!--<script>-->
-						<!--// build tween-->
-						<!--var tween = new TimelineMax ()-->
-							<!--.add([-->
-								<!--TweenMax.fromTo("#parallaxText .layer1", 1, {scale: 3, autoAlpha: 0.05, left: 300}, {left: -350, ease: Linear.easeNone}),-->
-								<!--TweenMax.fromTo("#parallaxText .layer2", 1, {scale: 2, autoAlpha: 0.3, left: 150}, {left: 100, ease: Linear.easeNone})-->
-							<!--]);-->
+				<!-- Screen 3: shadows Scene-->
+				<section id="shadows">
 
-						<!--// build scene-->
-						<!--var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: $(window).width()})-->
-										<!--.setTween(tween)-->
-										<!--.addIndicators() // add indicators (requires plugin)-->
-										<!--.addTo(controller);-->
-					<!--</script>-->
-				<!--</section>-->
-				<!--<div class="spacer s_viewport"></div>-->
+					<div id="shadows-platform"></div>
+
+					<!--shadows Layers-->
+					<div id="shadows-sky-layer1"></div>
+					<div id="shadows-sky-layer2"></div>
+					<div id="shadows-sky-layer3"></div>
+					<div id="shadows-sky-layer4"></div>
+					<div id="shadows-sky-layer5"></div>
+
+					<script>
+
+                        // build tween
+                        var tween = new TimelineMax ()
+                            .add([
+
+                            ]);
+
+                        // build scene
+                        var scene = new ScrollMagic.Scene({triggerElement: "#shadows", duration: $(window).width()})
+                            .setTween(tween)
+                            .addIndicators()
+                            .addTo(controller);
+
+					</script>
+				</section>
 			</div>
 		</div>
 	</div>

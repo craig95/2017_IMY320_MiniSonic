@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e72f4f-83f6-4052-894a-d1b9d04cc58a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Screen4/sky_layer7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pillar_3.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Screen1/CharacterWalking.gif" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.htm" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +44,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -266,12 +255,12 @@
       <workItem from="1504636772789" duration="4817000" />
       <workItem from="1504682681341" duration="205000" />
       <workItem from="1504766039062" duration="1885000" />
-      <workItem from="1505685211593" duration="802000" />
+      <workItem from="1505685211593" duration="1126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19984000" />
+    <option name="totallyTimeSpent" value="20308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -529,8 +518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding />
         </state>
       </provider>
