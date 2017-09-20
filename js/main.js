@@ -21,32 +21,27 @@ $(window).scroll(function(event){
     lastScrollLeft = st;
 });
 
-setTimeout(function island1() {
-    $('#island-1').animate({
-        'background-position-y': '42%'
-    }, 2000, 'linear');
-    $('#island-1').animate({
-        'background-position-y': '40%'
-    }, 2000, 'linear');
-    setTimeout(island1, Math.floor((Math.random() * 1000) + 1));
-}, Math.floor((Math.random() * 1000) + 1));
 
-setTimeout(function island2() {
-    $('#island-2').animate({
-        'background-position-y': '48%'
-    }, 2000, 'linear');
-    $('#island-2').animate({
-        'background-position-y': '50%'
-    }, 2000, 'linear');
-    setTimeout(island2, Math.floor((Math.random() * 1000) + 1));
-}, Math.floor((Math.random() * 1000) + 1));
+$(document).ready(function() {
+    $('#island1-info').hide();
+    $('#island2-info').hide();
+    $('#island3-info').hide();
 
-setTimeout(function island3() {
-    $('#island-3').animate({
-        'background-position-y': '22%'
-    }, 2000, 'linear');
-    $('#island-3').animate({
-        'background-position-y': '20%'
-    }, 2000, 'linear');
-    setTimeout(island3, Math.floor((Math.random() * 1000) + 1));
-}, Math.floor((Math.random() * 1000) + 1));
+    $('div#island-1').hover(function () {
+        $('#island1-info').fadeIn();
+    }, function () {
+        $('#island1-info').fadeOut();
+    });
+
+    $('div#island-2').hover(function () {
+        $('#island2-info').fadeIn();
+    }, function () {
+        $('#island2-info').fadeOut();
+    });
+
+    $('div#island-3').hover(function () {
+        $('#island3-info').fadeIn();
+    }, function () {
+        $('#island3-info').fadeOut();
+    });
+});

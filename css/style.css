@@ -282,40 +282,97 @@ html[xmlns] .clearfix {
 /* Islands */
 
 .island {
-	background-repeat: no-repeat;
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	z-index: 1000;
 }
 
-.type1 {
-	background-image: url("../img/Screen4/platform_1.png");
-}
-
-.type2 {
-	background-image: url("../img/Screen4/platform_2.png");
-}
-
-.type3 {
-	background-image: url("../img/Screen4/platform_3.png");
+.island img {
+	width: 100%;
+	height: 100%;
+	margin-top: 52px;
 }
 
 #island-1 {
-	background-size: 14% 40%;
-	background-position: 15% 40%;
+	position: absolute;
+	left: 15%;
+	height: 203px;
+	width: 149px;
+	-webkit-animation: island-animate-1 4s infinite;
+	animation: island-animate-1 4s infinite;
+	z-index: 1005;
+}
+
+@keyframes island-animate-1 {
+	0%   {top: 20%;}
+	50%  {top: 22%;}
+	100% {top: 20%;}
 }
 
 #island-2 {
-	background-size: 20% 20%;
-	background-position: 50% 50%;
+	position: absolute;
+	left: 45%;
+	height: 108px;
+	width: 187px;
+	-webkit-animation: island-animate-2 8s infinite;
+	animation: island-animate-2 8s infinite;
+	z-index: 1005;
+}
+
+@keyframes island-animate-2 {
+	0%   {top: 30%;}
+	50%  {top: 28%;}
+	100% {top: 30%;}
 }
 
 #island-3 {
-	background-size: 14% 40%;
-	background-position: 85% 20%;
+	position: absolute;
+	left: 75%;
+	height: 203px;
+	width: 149px;
+	-webkit-animation: island-animate-3 6s infinite;
+	animation: island-animate-3 6s infinite;
+	z-index: 1005;
 }
 
+@keyframes island-animate-3 {
+	0%   {top: 10%;}
+	50%  {top: 12%;}
+	100% {top: 10%;}
+}
+
+.island-info {
+	position: absolute;
+	background-color: #151315;
+	z-index: 1005;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.island-info>div {
+	width: 100%;
+	margin: 3px;
+	border: 2px solid #af9661;
+	background-color: #151315;
+}
+
+#island1-info {
+	width: 149px;
+	height: 50px;
+	z-index: 1005;
+}
+
+#island2-info {
+	width: 187px;
+	height: 50px;
+	z-index: 1005;
+}
+
+#island3-info {
+	width: 149px;
+	height: 50px;
+	z-index: 1005;
+}
 
 /* Sky Layers*/
 #sky-sky-layer1 {
